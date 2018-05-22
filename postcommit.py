@@ -1,4 +1,6 @@
 import mercurial, urllib, subprocess
+asdfasdfasdaf
+
 from mercurial import util
 from mercurial import patch
 from mercurial.ui import ui
