@@ -1,5 +1,4 @@
-asdfasdf
-asdf//$Id$
+//$Id$
 package com.zoho.code.repository;
 
 import java.util.logging.Logger;
@@ -50,6 +49,7 @@ public class Discussion {
     }
     
     public void setLineType(String lineType){
+        System.out.println("test repo");
         this.lineType =  getLineTypeValue(lineType).getTypeId();
     }
     
