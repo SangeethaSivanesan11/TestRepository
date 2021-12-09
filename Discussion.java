@@ -1,3 +1,4 @@
+asdfas
 //$Id$
 package com.zoho.code.repository;
 
@@ -315,7 +316,7 @@ public class Discussion {
 	public static void sentDiscussionMail(Long cideAccId, String status, String note) throws Exception {
 		JSONObject userObj = UserAPI.getUserInfo(cideAccId);
 		String senderName = userObj.getString("email");
-		String subject = senderName + " started a discussion" + status;
+		String subject = senderName + " started a discussion  " + status;
 		EMail notificationMail = new EMail(userObj.getString("email"), "sangeetha.sivanesan");
 		notificationMail.setSenderName(userObj.getString("fullname"));
 		notificationMail.setSubject(subject);
@@ -327,5 +328,6 @@ public class Discussion {
 			LOGGER.log(Level.SEVERE, "Error while sending mail :: ", e);
 		}
 	}
+	
 	
 }
